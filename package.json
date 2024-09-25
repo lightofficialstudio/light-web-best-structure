@@ -8,10 +8,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postcss": "postcss -c config/postcss.config.mjs",
     "tailwind": "tailwindcss -c config/tailwind.config.ts"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.20",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
     "js-cookie": "^3.0.5",
@@ -31,8 +31,8 @@
     "@types/react-i18next": "^8.1.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.13",
-    "postcss": "^8",
-    "tailwindcss": "^3.4.1",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
     "typescript": "^5"
   }
 }

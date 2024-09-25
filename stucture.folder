@@ -1,0 +1,47 @@
+src/
+├── app/                     # App Router folder (เป็นโฟลเดอร์หลัก)
+│   ├── (auth)/              # Auth module (กลุ่ม pages ที่เกี่ยวข้องกับ auth เช่น sign-in, sign-up)
+│   │   ├── sign-in/
+│   │   │   └── page.tsx     # Sign-in page
+│   │   └── sign-up/
+│   │       └── page.tsx     # Sign-up page
+│   ├── dashboard/           # Dashboard-related pages
+│   │   └── page.tsx         # Dashboard home
+│   ├── layout.tsx           # Global layout component
+│   ├── page.tsx             # Home page (route "/")
+│   └── globals.css          # Global styles
+├── components/              # Reusable UI components
+├── config/                  # Project configuration files
+│   ├── eslint.config.js     
+│   ├── prettier.config.js   
+│   └── tailwind.config.js   
+├── hooks/                   # Custom React hooks
+├── locales/                 # Language files for internationalization
+├── middleware/              # Middleware functions for request handling
+├── public/                  # Static assets such as images, fonts, and styles
+│   ├── fonts/               # Font files
+│   │   ├── GeistMonoVF.woff
+│   │   └── GeistVF.woff
+│   ├── images/              # Images used in the project
+│   ├── styles/              # Additional stylesheets
+│   └── favicon.ico          # Favicon for the project
+├── services/                # API calls and business logic
+├── stores/                  # Global state management (Redux, Zustand)
+├── styles/                  # Global CSS or styling configurations (e.g., MUI Theme)
+│   ├── font.css             # Custom font styles
+│   └── globals.css          # Global styles
+├── tests/                   # Unit and integration tests
+├── types/                   # TypeScript types and interfaces
+├── utils/                   # Helper functions and utilities
+.vscode/
+├── settings.json            # VS Code specific settings
+.github/
+└── workflows/
+    └── ci.yml               # GitHub Actions for CI/CD pipeline
+├── .env.local               # Local environment variables
+├── Dockerfile               # Docker configuration
+├── README.md                # Project documentation
+├── docker-compose.yml       # Docker Compose configuration
+├── next.config.js           # Next.js configuration
+├── package.json             # Project dependencies and scripts
+└── tsconfig.json            # TypeScript configuration

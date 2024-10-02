@@ -1,0 +1,20 @@
+stores/
+│
+├── actions/          # รวมไฟล์ action creators
+│   └── userActions.ts    # ตัวอย่าง action สำหรับจัดการข้อมูล user
+│
+├── reducers/         # รวมไฟล์ reducers สำหรับการจัดการ state
+│   ├── userReducer.ts    # ตัวอย่าง reducer สำหรับ user state
+│   └── rootReducer.ts    # รวม reducers ทั้งหมด
+│
+├── slices/           # สำหรับ Redux Toolkit slices (ถ้าใช้ Redux Toolkit)
+│   └── userSlice.ts      # ตัวอย่าง slice สำหรับ user state
+│
+├── selectors/        # รวมไฟล์ selectors สำหรับเลือกข้อมูลจาก state
+│   └── userSelectors.ts  # ตัวอย่าง selectors สำหรับ user state
+│
+├── middlewares/      # ถ้ามีการใช้ middleware เช่น Redux Thunk หรือ Saga
+│   └── authMiddleware.ts  # ตัวอย่าง middleware สำหรับ auth
+│
+├── store.ts          # ตั้งค่า Redux store
+└── types.ts          # เก็บ types สำหรับ Redux actions และ state

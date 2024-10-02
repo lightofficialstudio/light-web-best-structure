@@ -1,3 +1,7 @@
 {
-  "welcome": "Welcome to the website"
+  "welcome": "Welcome",
+  "notSignedIn": "You are not signed in",
+  "signIn": "Sign in with Google",
+  "signOut": "Sign out",
+  "reduxTest": "Redux Test"
 }

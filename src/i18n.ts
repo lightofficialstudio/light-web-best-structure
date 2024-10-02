@@ -2,18 +2,17 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import Cookies from "js-cookie";
 
+// #region : mock-phase
+import en from "@locales/en.json";
+import th from "@locales/th.json";
+// #endregion
+
 const resources = {
   en: {
-    translation: {
-      welcome: "Welcome",
-      // Other translations
-    },
+    mock: en,
   },
   th: {
-    translation: {
-      welcome: "ยินดีต้อนรับ",
-      // Other translations
-    },
+    mock: th,
   },
 };
 

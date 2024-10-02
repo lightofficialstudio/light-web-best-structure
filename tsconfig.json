@@ -25,7 +25,12 @@
       "@utils/*": ["src/utils/*"], // Alias สำหรับ utils ภายใน src
       "@types/*": ["src/types/*"], // Alias สำหรับ types ภายใน types
       "@styles/*": ["src/styles/*"], // Alias สำหรับ styles ภายใน styles
-      "@components/*": ["src/components/*"] // Alias สำหรับ components ภายใน components
+      "@components/*": ["src/components/*"], // Alias สำหรับ components ภายใน components
+      "@hooks/*": ["src/hooks/*"], // Alias สำหรับ hooks ��ายใน hooks
+      "@api/*": ["src/app/api/*"], // Alias
+      "@services/*": ["src/services/*"], // Alias
+      "@stores/*": ["src/stores/*"], // Alias
+      "@locales/*": ["src/locales/*"] // Alias
     }
   },
   "include": [

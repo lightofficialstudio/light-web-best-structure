@@ -2,26 +2,57 @@
 @tailwind components;
 @tailwind utilities;
 
+/* สีหลักของ KBank */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* สีพื้นหลังสำหรับ light mode */
+  --foreground: #1f1f1f; /* สีข้อความที่เหมาะกับ light mode */
+  --primary: #00a859; /* สีเขียวของ KBank */
+  --secondary: #f5f5f5; /* สีเทาอ่อนที่ให้ความรู้สึกสบายตา */
+  --accent: #ff5722; /* สีส้ม/แดง ใช้เป็นจุดเด่น เช่น ปุ่ม */
+  --border: #dcdcdc; /* สีขอบที่เรียบง่าย */
 }
 
+/* เมื่อผู้ใช้ตั้งเป็น dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #171717; /* สีพื้นหลังสำหรับ dark mode */
+    --foreground: #ededed; /* สีข้อความสำหรับ dark mode */
+    --primary: #00b36b; /* เขียวที่ดูสว่างขึ้นเล็กน้อยใน dark mode */
+    --secondary: #2e2e2e; /* สีเทาเข้มสำหรับพื้นหลังส่วนรอง */
+    --accent: #ff7849; /* สีส้มสำหรับจุดเด่นใน dark mode */
+    --border: #383838; /* สีขอบที่เข้ากับ dark mode */
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: "Geist Sans", sans-serif;
+  font-family: "Kanit", sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* Utility classes for primary and accent colors */
+  .bg-primary {
+    background-color: var(--primary);
+  }
+
+  .text-primary {
+    color: var(--primary);
+  }
+
+  .bg-accent {
+    background-color: var(--accent);
+  }
+
+  .text-accent {
+    color: var(--accent);
+  }
+
+  .border-custom {
+    border-color: var(--border);
   }
 }
